@@ -1,0 +1,24 @@
+.service-card:hover, .step-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+}
+
+/* Impact Box Styling */
+.impact-box {
+    transition: transform 0.3s ease-in-out;
+}
+.impact-box:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonial Box Styling */
+.testimonial-box {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    transition: transform 0.3s ease-in-out;
+    border-left: 4px solid #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.testimonial-box:hover {
+    transform: translateY(-5px);
+}
+
