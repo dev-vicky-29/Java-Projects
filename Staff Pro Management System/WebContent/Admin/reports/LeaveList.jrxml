@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="LeaveList" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="67e8f20e-ea9b-4093-9b3f-8ae5cf415d3f">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+	<queryString language="SQL">
+		<![CDATA[select * from leave_requests]]>
+	</queryString>
+	<field name="LeaveID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="LeaveID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="leave_requests"/>
+	</field>
+	<field name="StaffID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="StaffID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="leave_requests"/>
+	</field>
+	<field name="EmailID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="EmailID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="leave_requests"/>
+	</field>
+	<field name="LeaveType" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="LeaveType"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="leave_requests"/>
+	</field>
+	<field name="StartDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="StartDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="leave_requests"/>
+	</field>
+	<field name="EndDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="EndDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="leave_requests"/>
+	</field>
+	<field name="Status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="leave_requests"/>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="e80d2705-6cb2-442e-9ea1-15f6c33d9cb2"/>
+				<staticText>
+					<reportElement x="20" y="20" width="375" height="43" forecolor="#FFFFFF" uuid="ce7f8da6-ba29-45c0-9357-cc820c007b23"/>
+					<textElement>
+						<font size="26" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Staff Pro Management System]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="395" y="43" width="180" height="20" forecolor="#FFFFFF" uuid="c54252b6-bf33-4288-a40b-02325f8453b0"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Leave List]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="1ac72a1c-168e-4a6b-9603-9b22024ffad2"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="30" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="10946db3-dc94-47ac-b0b5-58a426b3150a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="70ac25af-e91a-4c2b-8eca-24a05d35c916"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LeaveID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="30" y="0" width="40" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="4bce3efe-9136-4b09-9a96-4361922975c8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a5efd3a1-47ab-4784-a27e-3eaabdacadee"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[StaffID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="70" y="0" width="110" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="dbb627c2-2f3b-4528-92b2-f07459473cd5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="93f8202a-5b1b-4445-ae97-46eadc289a7b"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EmailID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="0" width="110" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="043ce8d7-e507-4912-aeaf-55f3a5c855f3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4b49d2c9-e609-46ab-a67b-cf7a505047af"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LeaveType]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="290" y="0" width="105" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="14a64589-5172-4e3b-a957-77de35c07581">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ec4ecb09-c8d5-42ef-97bd-5878620418bc"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[StartDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="395" y="0" width="105" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="eb0d4642-e40c-4736-8549-fa5f42d8bd6f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="39817aaf-4caf-4b51-8694-4fcea1eab726"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EndDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="500" y="0" width="53" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="c82c7c33-fcad-4b05-97ba-02784a12eb5a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ffde0515-9272-44e5-a730-59b476a94c07"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="9f1110de-d2aa-4f84-a471-225652a02171"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="30" height="20" uuid="4646efa8-d0dc-45bc-83be-c3e2ba86b489">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="70ac25af-e91a-4c2b-8eca-24a05d35c916"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{LeaveID}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="30" y="0" width="40" height="20" uuid="e2d94fc6-5a5c-4fed-83cc-9e53aaa06dd7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a5efd3a1-47ab-4784-a27e-3eaabdacadee"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{StaffID}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="70" y="0" width="110" height="20" uuid="58dfafd1-91eb-4728-898b-4440644e0cf6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="93f8202a-5b1b-4445-ae97-46eadc289a7b"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EmailID}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="180" y="0" width="110" height="20" uuid="16482dea-7714-474d-b2af-72a699973e7d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4b49d2c9-e609-46ab-a67b-cf7a505047af"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{LeaveType}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="290" y="0" width="105" height="20" uuid="72400bf5-210e-4235-a970-c7146c001665">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ec4ecb09-c8d5-42ef-97bd-5878620418bc"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{StartDate}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="395" y="0" width="105" height="20" uuid="83d5f43f-11e1-449c-ac85-cb4fe20f4d41">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="39817aaf-4caf-4b51-8694-4fcea1eab726"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EndDate}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="500" y="0" width="53" height="20" uuid="0318dacf-6bea-4390-86f2-9575702eec44">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ffde0515-9272-44e5-a730-59b476a94c07"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Status}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="cf769a52-4ab2-46cb-8685-4b765f46c363"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="6975ebde-c0ba-4010-9d4f-8a8019517cc6"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="b09cb7a0-b4c4-4525-ba31-435e21cc87a1"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
