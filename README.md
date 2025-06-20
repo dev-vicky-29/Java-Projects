@@ -12,7 +12,7 @@ All projects include admin/user login, CRUD operations, dynamic content renderin
 - MySQL Database
 - Apache Tomcat Server
 - HTML5, CSS3, Bootstrap
-- Tools: Eclipse / NetBeans, XAMPP, phpMyAdmin
+- Tools: Eclipse, Jasper Report, MySQL
 
 ---
 
